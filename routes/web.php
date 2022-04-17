@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    if (Auth::check()) {
+        return view('utama');
+    }else{
+        return view('login');
+    }
+    
 })->name('login_again');
 
 Route::post('/login', 'Auth\LoginController@login')->name('login');
