@@ -1,4 +1,5 @@
 1. Sebelum Running Aplikasi, diharapkan melakukan migrate seed untuk menambahkan dummy data
 syntax => php artisan migrate:fresh --seed
 2. Untuk login bisa menggunakan username: admin@email.com passwordnya: 123123
+3. Diharapkan komputer terkonek keinternet, dikarenakan CDN bootstrap beberapa plugin lainnya online.
 Terima kasih....
